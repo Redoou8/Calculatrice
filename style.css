@@ -13,13 +13,16 @@ body{
     max-width: 100vw;
     max-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: indigo;
     font-family: Arial;
+    row-gap: 10vh;
 }
 
 .calculatrice {
-    background-color: rgb(53, 85, 114);
+    background-color: rgb(148, 83, 161);
     flex-direction: column;
     display: flex;
     width: 300px;
@@ -28,7 +31,7 @@ body{
     justify-content: center;
     margin-top: 2%;
     border-radius: 5px;
-    
+    border: solid 3px  rgb(110, 59, 121);
 }
 
 .ecran {
@@ -53,12 +56,58 @@ body{
     justify-content: center;
     padding: 5px;
     grid-gap: 5px;
+   
 }
 
 input{
-
+     border: solid 3px  rgb(110, 59, 121);
     position: relative;
     display: block;
     justify-content: end;
     align-items: end;
 }
+.alert {
+    position: relative;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    justify-content: center;
+    row-gap: 10vh;
+  }
+  
+h1{
+    text-align: center;
+}
+ 
+  .alert.info {
+    
+    background-color: rgb(129, 69, 141);
+    border: 2px solid rgb(92, 40, 102);
+
+}
+
+
+
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+
+  .bouton {
+    border: solid 3px  rgb(110, 59, 121);
+  }
