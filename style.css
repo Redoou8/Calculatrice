@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0% ;
     box-sizing: border-box;
+    
 }
 
 .cal{
@@ -16,13 +17,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: indigo;
+    background-color: #8E7DBE;
     font-family: Arial;
     row-gap: 10vh;
 }
 
 .calculatrice {
-    background-color: rgb(148, 83, 161);
+    background-color: rgb(117, 73, 126);
+    box-shadow: 0 0 5px rgb(92, 33, 105);
     flex-direction: column;
     display: flex;
     width: 300px;
@@ -37,15 +39,13 @@ body{
 .ecran {
     width: 90%;
     height: 100px;
-    background-color: rgb(166, 166, 181);
+    background-color: rgb(233, 215, 236);
     border-radius: 5px;
     margin: 10px;
     justify-content: center;
     padding: 2%;
-    
-    
+    text-align: center;
     font-size: 30px ;
-
     
 }
 
@@ -68,7 +68,7 @@ input{
 }
 .alert {
     position: relative;
-    padding: 20px;
+    padding: 5px 20px;
     background-color: #f44336;
     color: white;
     opacity: 1;
@@ -76,6 +76,8 @@ input{
     margin-bottom: 15px;
     justify-content: center;
     row-gap: 10vh;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(92, 33, 105);
   }
   
 h1{
@@ -109,5 +111,21 @@ h1{
 
 
   .bouton {
-    border: solid 3px  rgb(110, 59, 121);
+    /* border: solid 3px  rgb(110, 59, 121); */
+    background-color: rgb(233, 215, 236);
+    color: rgb(110, 59, 121);
+    outline: none;
+    border:  10px rgb(67, 23, 77);
+    box-shadow: -2px 1px 5px rgb(61, 17, 71);
+  }
+
+  .bouton:hover {
+    
+    background-color: rgba(239, 215, 236, 0.733);
+  }
+
+  .bouton:focus {
+    background-color: rgba(236, 202, 232, 0.445);
+    box-shadow: none;
+
   }

@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() { //utilisation async meilleure ? 
 
 const closeBtn = document.querySelector('.closebtn');
 closeBtn.addEventListener("click", function() {
